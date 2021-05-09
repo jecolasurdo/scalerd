@@ -19,7 +19,7 @@ const (
 )
 
 func main() {
-	pace := pacer.SetUniformPace(samplingRate, samplingRate, samplingRateBasis)
+	pace := pacer.SetConstantPace(samplingRate, samplingRateBasis)
 
 	systemStatHistory := systeminfo.NewSystemStatHistory(sampleBufferSize)
 	for {
